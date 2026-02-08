@@ -1,0 +1,77 @@
+:root {
+  --doclens-bg: rgba(12, 18, 28, 0.92);
+  --doclens-border: rgba(255, 255, 255, 0.12);
+  --doclens-text: #f5f7fb;
+  --doclens-muted: #b6c0d1;
+  --doclens-accent: #7cc7ff;
+}
+
+#doclens-overlay {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  max-width: 420px;
+  width: calc(100% - 32px);
+  max-height: calc(100% - 32px);
+  overflow: auto;
+  background: var(--doclens-bg);
+  color: var(--doclens-text);
+  border: 1px solid var(--doclens-border);
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  padding: 16px 18px;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  z-index: 2147483647;
+}
+
+#doclens-overlay h2 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#doclens-overlay p {
+  margin: 0 0 10px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+#doclens-overlay ul {
+  padding-left: 18px;
+  margin: 0 0 12px;
+}
+
+#doclens-overlay li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+#doclens-overlay a {
+  color: var(--doclens-accent);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+#doclens-overlay a:hover {
+  text-decoration: underline;
+}
+
+#doclens-overlay .doclens-muted {
+  color: var(--doclens-muted);
+  font-size: 12px;
+}
+
+#doclens-overlay button {
+  background: transparent;
+  border: 1px solid var(--doclens-border);
+  color: var(--doclens-text);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#doclens-overlay button:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+}
