@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "DocLens",
+  "version": "0.1.0",
+  "description": "Summaries for public-record PDFs without hosting or uploading files.",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"],
+      "css": ["content-style.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["page-extract.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
